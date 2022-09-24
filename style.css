@@ -1,0 +1,123 @@
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+
+p{
+color: aliceblue;
+}
+
+body {
+  background-image: linear-gradient(to right, #f9d99a, #f7797d);
+  background-image: url("dragon-scales.svg");
+}
+
+.contenedor{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cuerpo{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.carta{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(135, 0, 50, 0.61);
+  border-radius: 10rem;
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0.2rem 0.3rem 0.2rem rgb(10, 180, 231);
+}
+
+.cabezera_principal{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: rgba(192, 0, 50, 0.61);
+  border-radius: 1rem;
+  padding: 0;
+  padding-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: aliceblue;
+ box-shadow: 0.2rem 0.3rem 0.2rem rgb(10, 180, 231);
+}
+
+.imgRedonda {
+  border-radius: 50%;
+}
+
+.imgPrincipal{
+  width: 25%;
+  height: 25%;
+  /* border-right: 20px solid #f9d99a;
+  border-left: 20px solid #f7797d; */
+}
+
+.imgSecundaria{
+  width: 5rem;
+  height: 5rem;
+}
+
+.img{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+
+.contenido{
+  flex-grow: 2;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+  align-items: flex-start;
+}
+
+.descuento{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  padding-right: 1rem;
+}
+
+
+.texto_decuento{
+  font-size: 2rem;
+  color: rgb(10, 180, 231);
+  text-shadow: 0.08rem 0.08rem rgb(10, 113, 231);
+}
+
+
+
+.icono{
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+a{
+  color: aliceblue;
+  text-decoration: none;
+}
