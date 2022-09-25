@@ -2,13 +2,20 @@
   margin: 0;
   padding: 0;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-p{
-color: aliceblue;
+p, a, h1{
+  font-family: 'Concert', sans-serif;
+  color: aliceblue;
+}
+
+h1{
+  color: rgb(10, 180, 231);
+  text-shadow: 0.08rem 0.08rem rgb(10, 113, 231);
 }
 
 body {
-  background-image: linear-gradient(to right, #f9d99a, #f7797d);
+  /* background-image: linear-gradient(to right, #f9d99a, #f7797d); */
   background-image: url("dragon-scales.svg");
 }
 
@@ -60,6 +67,7 @@ body {
 
 .imgRedonda {
   border-radius: 50%;
+  border: 0.2rem solid rgb(10, 180, 231);
 }
 
 .imgPrincipal{
@@ -110,14 +118,23 @@ body {
   text-shadow: 0.08rem 0.08rem rgb(10, 113, 231);
 }
 
-
-
 .icono{
   height: 1.3rem;
   width: 1.3rem;
+  flex-grow: 1;
+}
+
+.contenido_carta{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0.1rem;
 }
 
 a{
   color: aliceblue;
   text-decoration: none;
+  flex-grow: 2;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
 }
