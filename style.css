@@ -55,14 +55,13 @@ body {
   align-items: center;
   width: 100%;
   margin-top: 2rem;
+  margin-bottom: 1rem;
   background-color: rgba(192, 0, 50, 0.61);
   border-radius: 1rem;
-  padding: 0;
-  padding-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-top: 1.5rem;
   color: aliceblue;
- box-shadow: 0.2rem 0.3rem 0.2rem rgb(10, 180, 231);
+  box-shadow: 0.2rem 0.3rem 0.2rem rgb(10, 180, 231);
+ 
 }
 
 .imgRedonda {
@@ -73,8 +72,7 @@ body {
 .imgPrincipal{
   width: 25%;
   height: 25%;
-  /* border-right: 20px solid #f9d99a;
-  border-left: 20px solid #f7797d; */
+  margin-bottom: -1rem;
 }
 
 .imgSecundaria{
@@ -137,4 +135,47 @@ a{
   flex-grow: 2;
   padding: 0.2rem;
   padding-left: 0.5rem;
+}
+
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /* margin-left: 30px; */
+  /* margin-top: 5px; */
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  -3px); }
+  50%  { transform: translate(0, 3px); }
+  100%   { transform: translate(0, -3px); }   
+}
+
+@media (max-width: 385px) {
+  .carta{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: rgba(135, 0, 50, 0.61); */
+    border-radius: 2rem;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0.2rem 0.3rem 0.2rem rgb(10, 180, 231);
+  }
+
+  .img{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 0.5rem;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .contenido{
+    margin-left: 1rem;
+  }
 }
